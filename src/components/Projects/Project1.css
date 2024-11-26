@@ -1,0 +1,144 @@
+.project1-container {
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    max-width: 70vw;
+  }
+  
+  .project1-row {
+    display: flex;
+    width: 100%;
+    height: 100%; /* Take full height of the container */
+  }
+  
+  .project1-column-1 {
+    max-width: 200px;
+    width: 100%;
+    min-width: 10%;
+    height: 100%; /* Full height */
+
+    position: relative;
+    overflow: hidden; /* Hide any overflow for a clean vignette effect */
+  }
+  
+  .project1-column-1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%);
+    pointer-events: none; /* Ensure it doesn't interfere with interactions */
+    z-index: 1;
+  }
+  
+  
+  .project1-image {
+    width: 100%; /* Match container width */
+    height: 100%; /* Match container height */
+    object-fit: cover; /* Scale image without distorting */
+  }
+  
+  .project1-column-2 {
+    max-width: 1000px;
+    min-width: 70%;
+    height: 100%; /* Full height */
+    padding: 30px 15px; /* Top and bottom: 30px, Left and right: 15px */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    text-align: left; /* Ensure text aligns left */
+    overflow-y: auto;
+  }
+  
+  .project-header {
+    font-size: 32px; /* Match H1 styles */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px; /* Spacing below the header */
+
+  }
+
+  .project-subheader
+  {
+    
+      font-size: 3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      text-align: left;
+      color: var(--text-gray);
+      max-width: 650px;
+    
+    
+  }
+  
+  .project1-column-2 p {
+
+    margin-bottom: auto; /* Spacing below the description */
+    max-width: 700px;
+
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--text-gray);
+    margin-bottom: 25px; /* Spacing below each paragraph */
+  }
+  
+  .project-built-with-header {
+
+    font-weight: bold;
+
+    text-align: left; /* Aligns the text to the left */
+  
+    font-weight: 400;
+    
+    text-transform: capitalize;
+
+    font-size: 1.3rem;
+    color: var(--text-dark);
+    margin: 15px 0;
+
+  }
+  
+  .icon-container {
+    display: flex;
+    gap: 10px; /* Gap between the squares */
+    margin-top: 0; /* Let the video push this section up */
+    margin-bottom: 25px; /* Let the video push this section up */
+  }
+  
+  .square {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  .square-override {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  .square-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Preserve aspect ratio */
+  }
+  
+  .project1-video {
+    align-self: start; /* Optional: make the video span full width */
+    max-width: 100%;
+    border-radius: 10px;
+    max-height: 500px; /* Restrict video height */
+   
+  }
+  

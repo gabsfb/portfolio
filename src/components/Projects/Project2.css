@@ -1,0 +1,114 @@
+.project2-container {
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  max-width: 70vw;
+}
+
+.project2-content {
+  display: flex;
+  width: 100%;
+  height: 100%; /* Take full height of the container */
+  max-width: 800px;
+}
+
+.project2-column-2 {
+
+
+  max-width: 1000px;
+  min-width: 70%;
+  height: 100%; /* Full height */
+  padding: 30px 15px; /* Top and bottom: 30px, Left and right: 15px */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  text-align: left; /* Ensure text aligns left */
+
+
+  overflow-y: auto;
+}
+
+
+
+.project2-header {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px; /* Spacing below the header */
+}
+
+.project2-paragraphs p {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--text-gray);
+  margin-bottom: 45px; /* Spacing below each paragraph */
+}
+
+
+
+.project2-icons {
+  display: flex;
+  gap: 10px; /* Space between icons */
+  
+  margin-bottom: 45px; /* Push icons up relative to the button */
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #ccc; /* Optional: add a border for consistency */
+}
+
+.project2-button {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: var(--accent);
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 400;
+  
+  text-align: center;
+  transition: background-color 0.3s;
+  font-size: 24px;
+  
+
+}
+
+.project2-button:hover {
+  background-color: #962c2e;
+}
+
+.project2-column-1 {
+  max-width: 200px;
+  width: 100%;
+  min-width: 10%;
+  height: 100%; /* Full height */
+
+  position: relative;
+  overflow: hidden; /* Hide any overflow for a clean vignette effect */
+}
+
+.project2-column-1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6) 100%);
+  pointer-events: none; /* Ensure it doesn't interfere with interactions */
+  z-index: 1;
+}
+
+.image-website {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image is cropped to fit within bounds */
+  border-radius: 15px; /* Optional: add rounding if desired */
+}

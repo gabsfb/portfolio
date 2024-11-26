@@ -1,0 +1,114 @@
+/* src/components/Projects/Modal.css */
+
+
+
+.modal-close {
+  position: absolute;
+  top: 5px; /* Distance from the top of the container */
+  left: 0; /* Distance from the left of the container */
+  background: transparent; /* No background */
+  border: none; /* No border */
+  color: #ff0000; /* Red color for the X icon */
+  font-size: 36px; /* 50% larger */
+  cursor: pointer;
+  transition: color 0.3s;
+  z-index: 10; /* Ensure the X is above the modal content */
+  background-color: black;
+  padding: 10px 4px 5px 4px;
+
+}
+
+/* Change color on hover */
+.modal-close:hover {
+  color: #943232; /* Slightly lighter red when hovering */
+}
+
+
+
+
+
+/* Modal overlay animations */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  
+}
+
+
+
+/* Modal slide animations */
+/* The modal itself */
+.modal {
+  background-color: black;
+  padding-left: 30px;
+  max-width: 80vw;
+  min-height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed; /* Fixed positioning for precise placement */
+  top: 0; /* Center vertically */
+  right: 0; /* Align to the right of the screen */
+
+
+  
+}
+
+.modal::before {
+  content: ""; /* Ensures the pseudo-element is rendered */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px; /* Width of the white line */
+  height: 100%; /* Extend the full height of the modal */
+  background-color: #1414149d /* Color of the line */
+}
+
+/* Slide-in from the right */
+.modal.slide-in {
+  transform: translateX(100%);
+  animation: slideIn 0.3s forwards;
+}
+
+/* Slide-out to the right */
+.modal.slide-out {
+  transform: translateX(0);
+  animation: slideOut 0.3s forwards;
+}
+/* Disable vertical scroll for the modal */
+
+
+/* Enable vertical scroll for the child element */
+
+
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Slide-out animation */
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+

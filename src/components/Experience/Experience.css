@@ -1,0 +1,232 @@
+/* Header styles */
+.exp-header {
+  max-width: 70%;
+  padding: 10px;
+  margin-left: 15px; /* Aligns to the right */
+  margin-right: auto; /* Ensures no margin on the right */
+}
+.experience-section {
+  min-height: 100vh;
+  
+  max-width: 1600px;
+  
+
+  margin: 0 auto 100px auto; /* Center horizontally and keep bottom margin */
+  padding: 20px 20px;
+  width: 100%; /* Ensures it takes full width up to the max-width */
+}
+
+
+
+/* Grid layout for Experience section */
+.exp-grid-container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Left column: Experience Items List */
+.exp-items-list {
+  border-radius: 8px;
+  padding: 10px;
+
+  max-width: 450px; /* Set maximum width to 600px */
+  width: 100%; /* Ensure it takes full width up to the max-width */
+  margin-left: auto; /* Aligns to the right */
+  margin-right: 25px; /* Ensures no margin on the right */
+  text-align: center; /* Keeps the content aligned to the left within the container */
+
+  
+}
+
+/* Experience Item Card */
+.exp-item-card {
+  background-color: transparent; /* No background color by default */
+  margin-bottom: 10px;
+  padding: 10px 15px 10px 30px; /* Add padding on the left to make space for the rhombus */
+  border-radius: 8px;
+ 
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid transparent; /* Make border transparent by default */
+  transition: background-color 0.3s, border 0.3s; /* Add transition for smooth effect */
+}
+
+
+
+/* Rhombus figure (default state) */
+.exp-item-card::before,
+.exp-item-card.selected::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--accent); /* Border color for the rhombus */
+  transform: rotate(45deg); /* Rotate to make it a rhombus */
+  position: absolute;
+  left: 10px; /* Adjust as needed to position the rhombus on the left */
+  
+}
+
+/* Filled rhombus for the selected item */
+.exp-item-card.selected::before {
+  width: 10px;
+  height: 10px;
+  left: 13px;
+  background-color: var(--accent); /* Background color for the filled rhombus */
+  border: none; /* Remove border */
+ 
+  
+  
+}
+.exp-item-content
+{
+  margin-left:15px;
+}
+
+
+/* Right column: Selected Experience Details */
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(40px); /* Start from below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at normal position */
+  }
+}
+
+.fade-in {
+  animation: fadeInBottom 0.3s ease-out forwards;
+  opacity: 1 !important; /* Ensure opacity is 1 after animation */
+  visibility: visible !important; /* Ensure visibility stays visible */
+
+}
+.exp-content-container {
+  padding: 20px;
+  max-width: 700px;
+  width: 100%;
+  margin-left: 25px;
+  margin-right: auto;
+  border-left: 1px solid var(--accent);
+
+
+}
+
+
+.exp-content-container.content-1 {
+  margin-top: 0vh;
+
+}
+.exp-content-container.content-2 {
+  margin-top:-3vh;
+
+}
+.exp-content-container.content-3 {
+  margin-top:-2vh;
+
+}
+.exp-content-container.content-4 {
+  margin-top:1vh;
+
+}
+.exp-content-container.content- {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 100%; /* Ensure the container has a height (use 100% or a fixed value) */
+  width: 100%; /* Ensure the container takes full width */
+
+  
+  line-height: 1.5;
+  color: var(--text-gray)!important;
+
+}
+.empty-label
+{
+  font-variant: small-caps;
+  text-transform: lowercase;
+
+  color: var(--text-white);
+  font-size: 24px!important;
+}
+
+
+
+
+
+
+
+
+/* When the item is selected, add a semi-transparent background and white border */
+.exp-item-card.selected {
+  background-color: rgba(0, 0, 0, 0.3); /* Background with 30% opacity */
+  border: 1px solid #696969; /* White border */
+
+  
+  
+  
+}
+
+/* Optional: Change background on hover */
+.exp-item-card:hover {
+  background-color: rgba(0, 0, 0, 1); /* Slightly darker on hover */
+  
+}
+
+
+
+
+/* Style for the Courses & Certifications Section */
+.courses-certifications {
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+  padding: 10px;
+
+  max-width: 400px; /* Set maximum width to 600px */
+  width: 100%; /* Ensure it takes full width up to the max-width */
+  margin-left: auto; /* Aligns to the right */
+  margin-right: 65px; /* Ensures no margin on the right */
+  text-align: center; /* Keeps the content aligned to the left within the container */
+
+}
+
+.courses-certifications h3 {
+  font-size: 1.3rem!important;
+  color: var(--text-gray);
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-align: left;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  
+}
+
+
+
+
+.course-item {
+  
+  margin-top: 10px;
+  display: flex;
+  gap: 5px; /* 5px gap between course items */
+  flex-wrap: wrap; /* Allows wrapping if needed */
+}
+
+.course-title {
+  font-size: 20px!important;
+  color: var(--text-white);
+}
+
+.course-type {
+
+  font-size: 16px!important;
+  color: var(--text-gray);
+  margin: 5px 0 0;
+}
+

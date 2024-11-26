@@ -1,0 +1,158 @@
+/* src/styles/global.css */
+
+/* Define colors as CSS variables */
+:root {
+  --text-white: #f1f1f1;
+  --text-gray: #C0C0C0;
+
+  --accent: #ff3c3f;
+  --text-dark: #8f8f8f;
+  --text-darker: #313131;
+  --background-gradient:linear-gradient(7deg, rgba(0,0,0,1) 33%, rgb(0, 36, 82) 75%, rgb(7, 0, 26) 100%);
+
+}
+
+/* Your existing styles */
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    margin: 25px auto 100px auto;
+    padding: 20px 20px;
+    width: 100%;
+    overflow-x: hidden;
+    max-width: 1600px;
+    overflow-y: hidden;
+}
+
+.content-section h1 {
+  font-size: 106px;
+  font-weight: bold;
+  margin: 0 0;
+  width: 100%; /* Ensure it takes the full width of the container */
+  text-align: left;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  
+  /* Gradient text color */
+  color: transparent;
+  /*background-image: linear-gradient(to top, #ffffff0e 0%, #ffffff2f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;*/
+  color: var(--text-white);
+
+  text-shadow: -10px 10px 20px rgba(0, 0, 0, 0.9);
+
+
+  /* White text stroke */
+  /*-webkit-text-stroke: 1px var(--text-white); /* Use text-white variable */
+  /*text-stroke: 1px var(--text-white); /* Use text-white variable */
+}
+
+.content-section p {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.clickable
+{
+  cursor:pointer;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Customized scrollbar styles */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent); /* Thumb color */
+  border-radius: 3px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff3d02; /* Color when hovering */
+}
+
+
+.card-text h2 {
+  text-align: left; /* Aligns the text to the left */
+  margin: 0; /* Optional: removes default margin for consistent spacing */
+  padding: 0; /* Optional: removes padding */
+  font-size: 1.7rem;
+
+  font-weight: 500;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  color: var(--text-white);
+}
+
+
+.card-text p {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin: 5px 0 0;
+}
+
+
+
+
+
+.rhombus 
+{
+  margin-left: 20px; /* Add padding on the left to make space for the rhombus */
+  padding-left: 10px;
+  position: relative;
+}
+
+
+.rhombus::before 
+{
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--accent); /* Border color for the rhombus */
+  transform: rotate(45deg); /* Rotate to make it a rhombus */
+  position: absolute;
+  left: -20px; /* Adjust as needed to position the rhombus */
+  top: 50%; /* Align vertically with the text */
+  transform: translateY(-50%) rotate(45deg); /* Center vertically and rotate */
+}
+
+/* Optional: Add a filled rhombus variation if needed */
+.rhombus-filled::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent); /* Background color for the filled rhombus */
+  position: absolute;
+  left: -17px; /* Adjust based on alignment */
+  top: 50%; /* Align vertically with the text */
+  transform: translateY(-50%) rotate(45deg); /* Center vertically and rotate */
+}
+
+.rhombus-hoverable:hover::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent); /* Background color for the filled rhombus */
+  position: absolute;
+  left: -17px; /* Adjust based on alignment */
+  top: 50%; /* Align vertically with the text */
+  transform: translateY(-50%) rotate(45deg); /* Center vertically and rotate */
+}
+ 

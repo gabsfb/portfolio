@@ -1,0 +1,62 @@
+/* src/components/Projects/Card.css */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  z-index: 100;
+}
+.p5 .card-image
+{
+  object-position: top;
+  transform: translateY(-20px);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: start;
+  border-radius: 0;
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+}
+
+.card::before {
+  content: ''; /* Empty content */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 30% opacity */
+  border-radius: 15px; /* Match the image's border-radius */
+  transition: background-color 0.3s ease-in-out; /* Transition for the background color */
+}
+
+.card:hover::before {
+  background-color: rgba(0, 0, 0, 0); /* Remove the overlay when hovered */
+}
+
+.card:hover img {
+  opacity: 1; /* Ensures the image remains fully visible on hover */
+}
+
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%); /* Black to transparent gradient */
+  color: white;
+  width: 100%;
+  padding: 40px 10px 10px;  /* 40px top padding, 10px left/right, 10px bottom */
+  text-align: left;  /* Align text to the left */
+  border-radius: 0 0 8px 8px;
+}
+
+
+ 

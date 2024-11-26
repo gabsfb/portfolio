@@ -1,0 +1,169 @@
+/* Container for the About section */
+
+  
+
+  /* Main container with two columns */
+  .about-container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    gap: 20px; /* Adds spacing between columns */
+  }
+  
+  /* Left Column */
+  .about-left-column {
+    flex: 0 0 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .about-paragraph {
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.3rem!important;
+    font-weight: 400;
+    color: var(--text-gray);
+    margin-bottom: 20px;
+    margin-left: 5px;
+  }
+  
+  .about-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Optional for rounded corners */
+    margin-left: 15px; /* Moves the image 15px to the right */
+    transform: scale(1.3); /* Scales the image 30% larger */
+    max-width: 450px;
+    transition: transform 0.3s ease; /* Optional: smooth animation for scaling */
+  }
+  
+  
+  /* Right Column */
+  .about-right-column {
+    
+    flex: 1; /* Takes 60% of the width */
+    display: flex;
+    align-items: flex-startñ;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 60px;
+  }
+  
+  /* Component styles */
+  .about-component {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .about-component-row {
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+  }
+  
+  .half-width {
+    flex: 1; /* Ensures each component takes 50% of the row */
+  }
+  
+/* Updated Component Title Styling */
+.component-title {
+    font-family: "League Spartan", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 10px;
+    color: white;
+    text-transform: uppercase; /* Make the text all uppercase */
+    margin-left: 20px; /* Add padding on the left to make space for the rhombus */
+    padding-left: 10px;
+    position: relative;
+}
+
+
+.component-title::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--accent); /* Border color for the rhombus */
+  transform: rotate(45deg); /* Rotate to make it a rhombus */
+  position: absolute;
+  left: -20px; /* Adjust as needed to position the rhombus */
+  top: 50%; /* Align vertically with the text */
+  transform: translateY(-50%) rotate(45deg); /* Center vertically and rotate */
+}
+
+/* Optional: Add a filled rhombus variation if needed */
+.component-title::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent); /* Background color for the filled rhombus */
+  position: absolute;
+  left: -17px; /* Adjust based on alignment */
+  top: 50%; /* Align vertically with the text */
+  transform: translateY(-50%) rotate(45deg); /* Center vertically and rotate */
+}
+
+  
+/* Updated Component Content Styling */
+.component-content {
+    width: 100%;
+    min-height: 50px;
+    background-color: rgba(0, 0, 0, 0.2); /* Black with 5% opacity */
+    border-radius: 5px; /* Optional for rounded corners */
+    padding: 25px;
+    backdrop-filter:blur(35px);
+}
+
+.skillset-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust to fit screen size */
+    gap: 20px; /* Space between items */
+
+  }
+
+  .about-list {
+    list-style: none; /* Remove default list styling */
+    padding: 25px;
+    margin: 0;
+    font-family: "League Spartan", sans-serif; /* Font family */
+    font-size: 18px; /* Font size */
+    font-weight: 300;
+    color: var(--text-white); /* Font color */
+  }
+  
+  .about-list li {
+    display: flex;
+    align-items: center; /* Center align text and icon */
+    position: relative; /* To position the bullet point */
+    align-items: center; /* Center align text and icon */
+    margin: 5px 0 5px 15px!important;  /* Add margin to the left of the p tag */
+    padding-left: 20px; /* Add space for the bullet */
+    
+    text-align: left;
+    
+  }
+  
+  .about-list li::before {
+    content: '';  /* Create an empty bullet point */
+    position: absolute;
+    left: 0; /* Align the bullet to the left of the paragraph */
+    top: 10px; /* Vertically center the bullet */
+    transform: translateY(-50%); /* Adjust bullet's vertical position */
+    width: 5px;  /* Set the width of the bullet */
+    height: 3px; /* Set the height of the bullet */
+    background-color:var(--accent); /* Bullet color */
+    border-radius: 50%; /* Make the bullet round */
+  }
+
+  .about-header
+  {
+    padding: 25px!important;
+  }
+
+
+
+
+
+  

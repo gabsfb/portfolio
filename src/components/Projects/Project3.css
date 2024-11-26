@@ -1,0 +1,120 @@
+/* Project3.css */
+
+.project3-container {
+    padding: 20px;
+  }
+  
+  .project3-header {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+    color: white;
+  }
+  
+  .project3-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .project3-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .project3-column {
+    width: 50%;
+    font-size: 16px;
+    color: #C0C0C0;
+    text-align: left;
+    font-weight: 500;
+  }
+  
+  .project3-built-with {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 48%;
+  }
+  
+  .project3-built-with h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .project3-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .icon-blender {
+    width: 45px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .icon-unity
+  {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: white;
+  }
+
+  .project3-image-row {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .project3-image {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .project3-button-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project3-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6b00;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.project3-button:hover {
+    background-color: #cc5600;
+}
+
+  
+  

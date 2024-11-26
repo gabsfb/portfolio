@@ -1,0 +1,36 @@
+/* Global styles for the entire app */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: black;
+    font-family: 'League Spartan', sans-serif; /* Global font */
+    color: #ffffff; /* Global text color */
+
+       
+    
+    
+}
+
+/* Gradient background for the main container */
+.gradient-background {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    
+    background: rgb(0,0,0);
+    background: var(--background-gradient);
+
+    background-size: 150% 150%;
+    background-position: center top;
+    padding: 20px 20px 20px 30px;
+}
+
+
+
+

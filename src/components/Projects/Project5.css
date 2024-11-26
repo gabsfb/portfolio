@@ -1,0 +1,166 @@
+/* General Container */
+.project5-container {
+  padding: 20px;
+  max-width: 80vw;
+  margin: 0 auto;
+  overflow-x: hidden;
+  max-height: 100vh; /* Full viewport height */
+}
+
+/* Header */
+
+
+.project5-subheader {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: left;
+  color: var(--text-white);
+
+}
+
+/* Paragraph */
+.project5-paragraph{
+  margin: 0 0 10px 0!important;
+  font-size: 20px!important;
+  line-height: 1.5!important;
+  color: var(--text-gray)!important;
+  margin-bottom: 45px!important; /* Spacing below each paragraph */
+}
+
+/* Row Styling */
+.project5-row {
+  display: flex;
+  width: 100%;
+  height: 100%; /* Take full height of the container */
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+  overflow-x: hidden;
+}
+
+/* Stack children vertically on screens smaller than 1280px */
+@media (max-width: 1280px) {
+  .project5-row {
+    flex-direction: column; /* Stack the divs vertically */
+    min-height: 100vh; /* Ensure the row has a min height of the viewport */
+    overflow-y: auto!important; /* Enable vertical scrolling if the content overflows */
+  }
+}
+
+/* Left Column (70%) */
+.project5-column-1 {
+  width: 100%;
+  min-width: 65%;
+  height: 100%; /* Full height */
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* Right Column (30%) */
+.project5-column-2 {
+  max-width: 1000px;
+  min-width: 30%;
+  height: 100%; /* Full height */
+  padding: 30px 15px; /* Top and bottom: 30px, Left and right: 15px */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  text-align: left; /* Ensure text aligns left */
+}
+
+.project5-video {
+  width: 100%;
+  min-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Image container */
+.project5-images-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px;
+  min-height: 100%;
+}
+
+/* Image with caption container */
+.image-with-caption {
+  display: flex;
+  flex-direction: column; /* Stack the image and caption vertically */
+  justify-content: space-between; /* Distribute space between the image and caption */
+  text-align: center;
+  height: 100%; /* Ensure it takes the full height of its container */
+}
+
+/* Image Styling */
+.image-with-caption img {
+  margin-bottom: 15px; /* Push the image to the top */
+}
+
+.image-with-caption h3 {
+  margin-bottom: 0;
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: 500; /* Semibold weight */
+  letter-spacing: 0.02em; 
+  color: var(--text-white); /* Use text-white variable */
+  font-variant: small-caps;
+  text-transform: lowercase;
+  margin-top: 25px;
+  
+  
+}
+
+/* Caption container for h3 and icon */
+.caption-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Ensure h3 and icon are spaced out */
+  align-items: center; /* Vertically center both h3 and icon */
+}
+
+.arrow-icon {
+  font-size: 24px; /* Adjust size as needed */
+  margin-right: -05%;
+  margin-top: auto; /* Push the caption to the bottom */
+  margin-bottom: 0;
+  
+}
+
+/* Image Styling */
+.image {
+  width: 100%;
+  max-height: 200px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.image-1 {
+  transform: translateX(0px); /* Customize position */
+}
+
+.image-2 {
+  transform: translateY(0px);
+}
+
+.image-3 {
+  transform: translateX(0px);
+}
+
+.image-4 {
+  transform: translateY(0px);
+}
+
+.image-5 {
+  transform: translateX(-20px);
+}
+.caption-5
+{
+  margin-left: 20%;
+}
+
+/* New class to move video left by 25px */
+.video-offset {
+  transform: translateX(-120px);
+}

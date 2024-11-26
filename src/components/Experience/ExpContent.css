@@ -1,0 +1,87 @@
+
+
+/* ExpContent Styles */
+.exp-content {
+  font-family: 'League Spartan', sans-serif;
+  text-align: left; /* Align all text to the left */
+}
+
+/* Title (h1) */
+.exp-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--text-white); /* Use text-white variable */
+  text-transform: uppercase;
+  margin: 2px 0;
+}
+
+/* Company (h2) */
+.exp-content h2 {
+  font-size: 1.5rem;
+  font-weight: 300; /* Regular weight */
+  color: var(--accent); /* Use text-white variable */
+  margin: 2px 0;
+}
+
+/* Date (h5) */
+.exp-content h5 {
+  font-size: 1.2rem;
+  font-weight: 300; /* Thin weight */
+  color: var(--text-dark); /* Use text-gray variable */
+  margin: 2px 0;
+}
+
+/* Spacing between Date and Description */
+.exp-content h5 + p:first-of-type {
+  margin-top: 40px; /* Add 40px space for the description */
+}
+
+/* General Paragraph (p) */
+.exp-content p {
+  font-size: 1.3rem;
+  font-weight: 400; /* Regular weight */
+  line-height: 1.2;
+  color: var(--text-gray); /* Use text-gray variable */
+  margin: 0; /* Default spacing for all paragraphs */
+  max-width: 550px !important;
+}
+
+/* Content Paragraph (second p) */
+.exp-content p:first-of-type + p {
+  margin-top: 30px; /* 15px space between the description and the content */
+}
+
+/* New Style: h3 */
+.exp-content h3 {
+  font-size: 1.5rem; /* 80% of 24px to create a small caps effect */
+  font-weight: 500; /* Semibold weight */
+  letter-spacing: 0.02em; 
+  color: var(--text-white); /* Use text-white variable */
+
+  font-variant: small-caps;
+  text-transform: lowercase;
+  margin-top: 25px;
+}
+
+.spaced-content {
+  padding-left: 30px; /* Adds 15px padding to the left */
+}
+
+.list-content p {
+  position: relative; /* To position the bullet point */
+  margin: 2px 0 2px 15px!important;  /* Add margin to the left of the p tag */
+  padding-left: 20px; /* Add space for the bullet */
+  
+}
+
+.list-content p::before {
+  content: '';  /* Create an empty bullet point */
+  position: absolute;
+  left: 0; /* Align the bullet to the left of the paragraph */
+  top: 10px; /* Vertically center the bullet */
+  transform: translateY(-50%); /* Adjust bullet's vertical position */
+  width: 5px;  /* Set the width of the bullet */
+  height: 3px; /* Set the height of the bullet */
+  background-color: var(--accent); /* Bullet color */
+  border-radius: 50%; /* Make the bullet round */
+}

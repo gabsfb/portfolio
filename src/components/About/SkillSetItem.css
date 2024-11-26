@@ -1,0 +1,104 @@
+/* Skill Set Item Layout */
+.skillset-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;  /* Remove space between items */
+}
+
+/* Square Container */
+.squared {
+  width: 40px;
+  height: 40px;
+  margin-right: 0; /* Remove margin */
+  position: relative;
+  overflow: hidden;
+  background-color: transparent; /* Remove background color */
+}
+.squared-override 
+{
+  height: 40px!important;
+  width: 50px!important;
+  margin-left: -5px;
+}
+
+.square-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover; /* Ensures the image fills the container without distortion */
+}
+.icon-background {
+  background-color: white;
+  border-radius: 8px; /* Optional: add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for better appearance */
+}
+
+/* Right Column with two rectangles */
+
+/* Rectangle for the Header */
+.rectangle {
+  width: 120px !important;  /* Width of the rectangles */
+  height: 20px;  /* Height of the rectangles */
+  background-color: transparent;  /* Remove background color */
+}
+
+/* Header inside the Rectangle */
+.header-container {
+
+  margin-bottom: -5px;;
+  width: 100%;
+}
+.header
+{
+  display: flex;
+  height: 100%;
+  align-items: end;
+  padding: 5px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  font-weight: 100!important;
+  
+  color: var(--text-gray);
+}
+
+/* Dots inside the Rectangle */
+.dots-container {
+  display: flex;
+  justify-content: space-evenly; /* Ensure dots are spaced evenly */
+  align-items: start;
+
+  width: 100%;  /* Full width of the parent container */
+  padding: 5px 5px;  /* Optional: add padding for better spacing */
+}
+
+/* Dots */
+/* Dots inside the Rectangle */
+/* Dots inside the Rectangle */
+/* Dots inside the Rectangle */
+.dot {
+  width: 15px;
+  height: 15px;
+  font-size: 18px;
+  display: inline-block;
+  margin: 3px 3px; /* Reduced spacing between stars */
+}
+
+/* Dots container */
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 5px;  /* Reduced gap */
+
+}
+
+/* Style for all icons in the dots */
+.dots i {
+  color: var(--accent); /* Apply the --orange variable color */
+}
+
+/* Optional: Adjust the size of the icons if needed */
+
