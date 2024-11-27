@@ -29,8 +29,8 @@
 
 /* Left column: Experience Items List */
 .exp-items-list {
-  border-radius: 8px;
-  padding: 10px;
+  border-radius: 10px;
+
 
   max-width: 450px; /* Set maximum width to 600px */
   width: 100%; /* Ensure it takes full width up to the max-width */
@@ -117,6 +117,7 @@
 }
 
 
+
 .exp-content-container.content-1 {
   margin-top: 0vh;
 
@@ -185,7 +186,7 @@
   margin-top: 40px;
   margin-bottom: 20px;
 
-  padding: 10px;
+
 
   max-width: 400px; /* Set maximum width to 600px */
   width: 100%; /* Ensure it takes full width up to the max-width */

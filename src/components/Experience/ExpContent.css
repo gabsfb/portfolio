@@ -43,7 +43,7 @@
   line-height: 1.2;
   color: var(--text-gray); /* Use text-gray variable */
   margin: 0; /* Default spacing for all paragraphs */
-  max-width: 550px !important;
+  max-width: 550px;
 }
 
 /* Content Paragraph (second p) */

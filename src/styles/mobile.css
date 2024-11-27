@@ -159,4 +159,75 @@
 
 
 
+
 }
+
+@media (max-width: 1120px) 
+{
+    .exp-grid-container {
+
+
+        display: none!important;
+    }
+
+    .experience-mobile-container
+    {
+        display: flex!important;
+        width: 100%;
+
+
+
+    }
+    .exp-items-list
+    {
+        max-width: none!important;
+    }
+
+    .clickable.exp-item-card.selected {
+        display: flex;
+        flex-direction: column; /* Stack child elements vertically */
+      }
+
+      /* Ensure .exp-content-mobile takes full width and aligns correctly */
+
+  
+  /* Hide .card-text when .exp-content-mobile is visible */
+  .clickable.exp-item-card.selected .card-text.exp-item-content {
+    display: none;
+  }
+  .clickable.exp-item-card{
+    align-items: start;
+  }
+
+  .exp-content p 
+    {
+    max-width: 90%!important;
+  }
+
+  .exp-item-card.selected::before {
+    top:25px;
+  
+  }
+  .exp-item-card.selected::after {
+    top:22px;
+  }
+  .exp-content-mobile
+  {
+    padding: 0 10px;
+  }
+  .exp-content-mobile h1
+  {
+    font-size: 2rem!important;
+  }
+  
+
+      
+
+
+
+}
+
+.experience-mobile-container
+    {
+        display: none;
+    }
