@@ -30,7 +30,7 @@
     overflow-y: hidden;
 }
 
-.content-section h1 {
+.content-section h1, .cta-container h1 {
   font-size: 106px;
   font-weight: bold;
   margin: 0 0;
@@ -89,7 +89,7 @@
 }
 
 
-.card-text h2 {
+.card-text h2, .cta-button {
   text-align: left; /* Aligns the text to the left */
   margin: 0; /* Optional: removes default margin for consistent spacing */
   padding: 0; /* Optional: removes padding */

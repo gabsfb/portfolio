@@ -1,0 +1,30 @@
+/* src/components/About/CTA.css */
+.cta-container {
+    text-align: center;
+    padding: 100px 20px 500px 20px;
+
+  }
+  
+  .cta-header {
+    font-size: 4rem!important;
+    text-align: center!important;
+  }
+  
+
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+
+
+    background-color: var(--accent); /* Use the accent color */
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .cta-button:hover {
+    background-color: darken(var(--accent), 10%);
+  }
+  

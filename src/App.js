@@ -9,6 +9,7 @@ import About from './components/About/About';
 import Experience from './components/Experience/Experience';
 import Projects from './components/Projects/Projects';
 import Menu from './components/Menu/Menu';
+import CTA from './components/CTA/CTA';
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 
 
@@ -32,6 +33,7 @@ const App = () => {
             <About />
             <Experience />
             <Projects />
+            <CTA />
             <ScrollToTopButton />
         </div>
     );
