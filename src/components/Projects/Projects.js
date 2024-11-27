@@ -48,7 +48,7 @@ const Projects = () => {
             image={project2Image}
           />
           <Card
-            className="card-1x3 clickable"
+            className="card-1x3 clickable p3"
             title="Website Redesign"
             description="A fresh digital presence for a new era."
             onClick={() => handleCardClick('project2')}

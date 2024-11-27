@@ -2,6 +2,7 @@
 import React from 'react';
 import './App.css';
 import './styles/global.css';
+import './styles/mobile.css';
 
 // Import the new section components
 import About from './components/About/About';

@@ -17,6 +17,16 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .about-right-column {
+    
+    flex: 1; /* Takes 60% of the width */
+    display: flex;
+    align-items: flex-startñ;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 60px;
+  }
   
   .about-paragraph {
     font-family: "League Spartan", sans-serif;

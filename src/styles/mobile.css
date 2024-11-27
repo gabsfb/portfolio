@@ -1,0 +1,121 @@
+/* mobile.css */
+@media (max-width: 860px) {
+    h1, .content-section h1  {
+        font-size: clamp(52px, 15vw, 15vw);
+        
+        color: var(--text-white);
+    }
+    .text-container
+    {
+        width: 100%!important;
+    }
+
+    .greeting .name1
+    {
+        font-size: clamp(56px, 9vw, 9vw);
+    }
+    .greeting .name2
+    {
+        font-size: clamp(76px, 15vw, 15vw);
+    }
+
+    .greeting .ocupation
+    {
+        font-size: clamp(24px, 5vw, 5vw);
+    }
+
+    .greeting .salute
+    {
+        font-size: clamp(18px, 3vw, 3vw);
+    }
+
+    .content-section, .menu-container
+    {
+        padding: 0important;
+    }
+
+    .gradient-background{
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .portfolio-list li
+    {
+        font-size: clamp(24px, 4vw, 4vw);
+    
+    }
+    .projects-grid {
+        display: flex!important;
+        max-height: none!important;
+        flex-direction: column;
+        gap: 10px; /* Space between cards */
+        min-width: 100%; /* Full width of the container */
+        max-width: 100%; /* Max width of the container */
+        margin-top: 0; /* Removes extra space from the new layout */
+        position: relative; /* Ensure positioning of cards is relative to the grid */
+      
+      
+      }
+      
+    .card{
+        height: 200px!important;
+
+    }
+    .projects-layout{
+        width: 100%!important;
+    }
+    .p3 img
+    {
+        position: relative;
+        transform: translate(-15%,-30%) rotate(90deg);;
+        height: auto!important;
+    }
+
+    .modal
+    {
+        max-width: none!important;
+    }
+
+    .project1-container, .project2-container
+    {
+        min-width: 100vw!important;
+        max-width: 100%!important;
+    }
+
+    .project5-container
+    {
+        
+    }
+
+    
+    .modal-close {
+        
+        top: 0px!important;
+        right: 0!important; 
+        left: auto!important;
+        width: 70px;
+    
+    }
+    
+    /* Change color on hover */
+    .modal-close:hover {
+        color: #943232; /* Slightly lighter red when hovering */
+    }
+    
+
+
+        .about-container {
+            flex-direction: column; /* Stacks columns vertically */
+        }
+    
+        .about-left-column, 
+        .about-right-column {
+             /* Reset widths to auto for vertical stacking */
+            width: 100%; /* Ensure columns take up full width */
+            padding-left: 0!important; /* Remove left padding from the right column */
+            margin: 0;
+        }
+
+
+
+}
