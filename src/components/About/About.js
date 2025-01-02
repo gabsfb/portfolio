@@ -15,6 +15,7 @@ import wordpress_icon from '../../images/wordpress-icon.webp';
 import github_icon from '../../images/github-icon.png';
 import plastic_icon from '../../images/palstic-scm.png';
 import firebase_icon from '../../images/firebase-icon.png';
+import figma_icon from '../../images/figma-icon.png';
 
 import personaje from '../../images/personaje.png';
 
@@ -56,11 +57,15 @@ const About = () => {
             <h2 className="component-title">Skill Set</h2>
             <div className="component-content skillset-grid">
             {/* Skill Set Items */}
-            <SkillSetItem header="C++" dotCount={3} imageUrl={cpp_icon} />
+            
             <SkillSetItem header="C#" dotCount={4} imageUrl={cs_icon} />
             <SkillSetItem header="Python" dotCount={3} imageUrl={python_icon} />
+            <SkillSetItem header="C++" dotCount={3} imageUrl={cpp_icon} />
+            
             <SkillSetItem header="Javascript" dotCount={4} imageUrl={javascript_icon} />
+            <SkillSetItem header="Figma" dotCount={4} imageUrl={figma_icon} />
             <SkillSetItem header="React" dotCount={3} imageUrl={react_icon} />
+            
             <SkillSetItem header="Unity" dotCount={3} imageUrl={unity_icon} />
             <SkillSetItem header="Blender" dotCount={3} imageUrl={blender_icon} squareOverride={true} />
             <SkillSetItem header="Elementor" dotCount={5} imageUrl={elementor_icon} />
