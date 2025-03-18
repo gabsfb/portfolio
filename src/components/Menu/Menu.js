@@ -34,14 +34,23 @@ const Menu = () => {
 
             {/* Left column with menu items */}
             <div className="list-container">
-                <hr className="line" />
+           
                 <ul className="portfolio-list">
-                    <li className = "rhombus rhombus-hoverable clickable" onClick={() => scrollToSection('about')}>about me</li>
-                    <li className = "rhombus rhombus-hoverable clickable" onClick={() => scrollToSection('experience')}>professional experience</li>
-                    <li className = "rhombus rhombus-hoverable clickable" onClick={() => scrollToSection('projects')}>portfolio / projects</li>
-                    <li className = "rhombus rhombus-hoverable clickable" onClick={() => scrollToSection('cta')}>contact me</li>
-                </ul>
-                <hr className="line" />
+                <li className="rhombus rhombus-hoverable clickable" onClick={() => scrollToSection('about')}>
+                    <span className="hover-line">about me</span>
+                </li>
+                <li className="rhombus rhombus-hoverable clickable" onClick={() => scrollToSection('experience')}>
+                    <span className="hover-line">professional experience</span>
+                </li>
+                <li className="rhombus rhombus-hoverable clickable" onClick={() => scrollToSection('projects')}>
+                    <span className="hover-line">portfolio / projects</span>
+                </li>
+                <li className="rhombus rhombus-hoverable clickable" onClick={() => scrollToSection('cta')}>
+                    <span className="hover-line">contact me</span>
+                </li>
+            </ul>
+
+              
             </div>
 
 

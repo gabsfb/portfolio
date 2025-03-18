@@ -16,7 +16,7 @@ const Project2 = () => {
         </div>
         {/* Left Column */}
         <div className="project2-column-2">
-          <h1 className="project2-header">Website Redesign</h1>
+          <h1 className="project2-header">Website Re<span className="highlight">design</span></h1>
           <h3 className="project-subheader">A fresh digital presence for a new era.</h3>
 
           
@@ -49,13 +49,14 @@ const Project2 = () => {
           </div>
 
           {/* Button */}
-          <a
-            href="https://rulesware.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project2-button"
-          >
-            Check the website
+   
+
+          {/* CTA Row */}
+          <a href="https://rulesware.com" target="_blank" rel="noopener noreferrer" className="project3-cta">
+            
+            <span className="cta-text">
+            Check out the website  →
+            </span>
           </a>
         </div>
 

@@ -5,12 +5,12 @@
   --text-white: #f1f1f1;
   --text-gray: #C0C0C0;
 
-  --accent: #ffde22;
-  --accent-dark: #bea200;
+  --accent: #00ff88;
+  --accent-dark: #217e85;
   --text-dark: #8f8f8f;
   --text-darker: #313131;
   --transparent: #ffffff00;
-  --background-gradient:linear-gradient(7deg, rgba(0,0,0,1) 33%, rgb(34, 34, 34) 75%, rgb(7, 0, 26) 100%);
+  --background-gradient:linear-gradient(7deg, rgba(0,0,0,1) 33%, rgb(31, 31, 31) 75%, rgb(0, 0, 0) 100%);
 
 }
 

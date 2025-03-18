@@ -22,7 +22,7 @@ const Project1 = () => {
 
         {/* Second Column */}
         <div className="project1-column-2">
-          <h1 className="project-header">Map Design</h1>
+          <h1 className="project-header">Map <span className="highlight">Design</span></h1>
           <h3 className="project-subheader">A world designed from scratch</h3>
 
           <p>

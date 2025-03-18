@@ -41,18 +41,18 @@ const Projects = () => {
             image={project1Image}
           />
           <Card
-            className="card-1x2 clickable project-disabled"
-            title="Boss Fight"
-            description="Coming soon"
-            onClick={() => handleCardClick('project3')}
-            image={project2Image}
-          />
-          <Card
-            className="card-1x3 clickable p3"
+            className="card-1x2 clickable"
             title="Website Redesign"
             description="A fresh digital presence for a new era."
             onClick={() => handleCardClick('project2')}
             image={project3Image}
+          />
+          <Card
+            className="card-1x3 clickable p3"
+            title="VFX & Mechanics"
+            description="Recreating iconic mechanics."
+            onClick={() => handleCardClick('project3')}
+            image={project2Image}
           />
           <Card
             className="card-1x1 project-disabled"
@@ -62,7 +62,7 @@ const Projects = () => {
             image={project4Image}
           />
           <Card
-            className="card-2x1 clickable p5"
+            className="card-2x1 clickable"
             title="Asset Creation"
             description="From concept to compeltion"
             onClick={() => handleCardClick('project5')}

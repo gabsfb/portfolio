@@ -1,120 +1,133 @@
-/* Project3.css */
-
 .project3-container {
-    padding: 20px;
-  }
-  
-  .project3-header {
-    font-size: 32px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    width: 100%;
-    text-align: left;
-    color: white;
-  }
-  
-  .project3-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .project3-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .project3-column {
-    width: 50%;
-    font-size: 16px;
-    color: #C0C0C0;
-    text-align: left;
-    font-weight: 500;
-  }
-  
-  .project3-built-with {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    width: 48%;
-  }
-  
-  .project3-built-with h3 {
-    margin: 0;
-    font-size: 20px;
-    font-weight: 400;
-    color: #ffffff;
-  }
-  
-  .project3-icons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .icon {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-  }
-  .icon-blender {
-    width: 45px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-  }
-  
-  .icon-unity
-  {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    padding: 5px;
-    background-color: white;
-  }
-
-  .project3-image-row {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-  }
-  
-  .project3-image {
-    width: 30%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .project3-button-row {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .project3-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff6b00;
-    color: #fff;
-    border-radius: 10px;
-    text-decoration: none; /* Removes underline */
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
 }
 
-.project3-button:hover {
-    background-color: #cc5600;
+.project3-left-column {
+  width: 30%;
 }
 
-  
-  
+.project3-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project3-right-column {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project3-header {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.project3-description {
+  font-size: 16px;
+  color: #C0C0C0;
+  line-height: 1.6;
+}
+
+.project3-built-with {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.icon-container {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-unity {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: white;
+}
+
+.icon-blender {
+  width: 45px;
+  height: 40px;
+}
+
+.square-icon {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+.icon-class {
+  width: 32px;
+  height: 32px;
+}
+
+.cta-text {
+  font-size: 18px;
+  color: var(--accent);
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.cta-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust if you want more/less space between text and line */
+  width: 0;
+  height: 1px;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.cta-text:hover {
+  color: var(--accent);
+}
+
+.cta-text:hover::after {
+  width: 100%;
+}
+
+.project3-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cta-text {
+  font-size: 18px;
+  color: var(--accent);
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.cta-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.project3-cta:hover .cta-text::after {
+  width: 100%;
+}
+

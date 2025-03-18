@@ -17,8 +17,8 @@ const Project5 = () => {
     <div className="project5-container">
       <div className="project5-row">
         <div className="project5-column-1">
-          <h1 className="project5-header">Asset Creation:</h1>
-          <h3 className="project5-subheader">From Concept to Completion</h3>
+          <h1 className="project5-header">Asset <span className="highlight">Creation</span>:</h1>
+          <h3 className="project5-subheader">From <span className="highlight">Concept</span> to <span className="highlight">Completion</span></h3>
           <p className="project5-paragraph">
           This project showcases my journey of bringing a 3D asset to life, starting from a simple idea and evolving through each stage of the creative process. From sketching initial concepts to crafting detailed models, applying materials, and perfecting the final touches, every step was an opportunity to refine my skills and bring the vision to reality. The focus was on blending creativity with technical precision to achieve a polished, professional-quality result.</p>
           <h3 className="project-built-with-header">built with:</h3>

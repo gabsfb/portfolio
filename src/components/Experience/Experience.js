@@ -192,7 +192,7 @@ const Experience = () => {
           {selectedItem ? (
             <ExpContent selectedItem={selectedItem} />
           ) : (
-            <p className="empty-label">Select a position to learn more</p>
+            <p className="empty-label">Select a <span className="highlight">position</span> to learn more</p>
           )}
         </div>
       </div>

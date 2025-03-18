@@ -16,13 +16,17 @@ console.log(encodedEmail);
 
   return (
     <div className="cta-container" id="cta">
-      <h1 className="cta-header">Let's Work Together!</h1>
+      <h1 className="cta-header">
+        Let's <span className="highlight">Work</span> Together!
+      </h1>
 
 
       <h2 className="cta-subtitle">
-        Contact Me
+        Contact Me!
       </h2>
 
+      <div className="cta-breakline" /> {/* Added breakline here */}
+      
 
       <a href="https://x.com/gfloresdev" target="_blank" rel="noopener noreferrer">
           <img src={xIcon} alt="X (Twitter)" className="icon-class" />
