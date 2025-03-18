@@ -5,10 +5,12 @@
   --text-white: #f1f1f1;
   --text-gray: #C0C0C0;
 
-  --accent: #ff3c3f;
+  --accent: #ffde22;
+  --accent-dark: #bea200;
   --text-dark: #8f8f8f;
   --text-darker: #313131;
-  --background-gradient:linear-gradient(7deg, rgba(0,0,0,1) 33%, rgb(0, 36, 82) 75%, rgb(7, 0, 26) 100%);
+  --transparent: #ffffff00;
+  --background-gradient:linear-gradient(7deg, rgba(0,0,0,1) 33%, rgb(34, 34, 34) 75%, rgb(7, 0, 26) 100%);
 
 }
 
@@ -76,7 +78,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #000; /* Track color */
+  background: var(--transparent); /* Track color */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -85,7 +87,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff3d02; /* Color when hovering */
+  background: var(--accent); /* Color when hovering */
 }
 
 

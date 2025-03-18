@@ -4,7 +4,7 @@
         position: fixed;
         top: 45px;
         left: 15px;
-        background: radial-gradient(circle at top, var(--accent), #A00000);
+        background: radial-gradient(circle at top, var(--accent), var(--accent-dark));
         color: white;
         border: none;
         width: 50px;

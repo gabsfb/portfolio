@@ -9,7 +9,12 @@
     font-size: 4rem!important;
     text-align: center!important;
   }
-  
+  .cta-subtitle
+  {
+      font-weight: 300;
+      font-size: 30px;
+      margin: 15px 0;
+  }
 
   
   .cta-button {
@@ -20,11 +25,23 @@
     background-color: var(--accent); /* Use the accent color */
     border-radius: 10px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     margin-top: 15px;
+    color: var(--text-darker);
   }
   
   .cta-button:hover {
-    background-color: darken(var(--accent), 10%);
+    background-color: var(--transparent);
+    border: 1px solid var(--accent);
+
+    color: var(--text-white);
   }
+
+  .icon-class {
+    cursor: pointer;
+    height: 50px;
+    filter: invert(1); /* Inverts colors, making black icons white */
+    margin: 5px;
+}
+
   

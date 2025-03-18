@@ -41,12 +41,11 @@
 .portfolio-list li {
     margin: 5px 0;
     transition: color 0.3s ease, font-size 0.3s ease;
-    /*cursor: url('/src/images/pointer.png') 16 16, pointer; */
- 
     padding: 5px;
     height: 36px;
     display: flex;
     align-items: center;
+    position: relative; /* Needed for the pseudo-element positioning */
 }
 
 .portfolio-list li:hover {
@@ -102,3 +101,4 @@
     font-weight: 300;
     margin-top: 2px;
 }
+

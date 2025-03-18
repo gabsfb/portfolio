@@ -2,6 +2,8 @@
 import React from 'react';
 import './Menu.css';
 
+
+
 const Menu = () => {
     // Smooth scroll to the specified section
     const scrollToSection = (sectionId) => {
@@ -21,6 +23,11 @@ const Menu = () => {
                     <h1 className="name1">gabriel</h1>
                     <h1 className="name2">flores</h1>
                     <p className="ocupation">Software Developer</p>
+               
+
+                    
+
+
                 </div>
                
             </div>
@@ -32,6 +39,7 @@ const Menu = () => {
                     <li className = "rhombus rhombus-hoverable clickable" onClick={() => scrollToSection('about')}>about me</li>
                     <li className = "rhombus rhombus-hoverable clickable" onClick={() => scrollToSection('experience')}>professional experience</li>
                     <li className = "rhombus rhombus-hoverable clickable" onClick={() => scrollToSection('projects')}>portfolio / projects</li>
+                    <li className = "rhombus rhombus-hoverable clickable" onClick={() => scrollToSection('cta')}>contact me</li>
                 </ul>
                 <hr className="line" />
             </div>
